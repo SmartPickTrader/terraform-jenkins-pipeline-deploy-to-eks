@@ -23,8 +23,4 @@ module "eks" {
             instance_types = ["t2.small"]
         }
     }
-   depends_on = [
-    aws_iam_role_policy_attachment.eks-AmazonEKSClusterPolicy,
-    aws_iam_role_policy_attachment.eks-AmazonEKSVPCResourceController,
-  ]
 }
